@@ -155,3 +155,78 @@ body{
     background:#ffd700;
     color:#111;
 }
+/* ===== CONTACT ===== */
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact button{
+    background:#38bdf8;
+    color:white;
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:#2563eb;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#ccc;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.navbar ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+.navbar ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
