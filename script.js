@@ -90,3 +90,28 @@ scriptOutput.value = randomScript;
 });
 
 }
+const thumbnailBtn = document.getElementById("generateThumbnail");
+const thumbnailOutput = document.getElementById("thumbnailOutput");
+
+const thumbnailPrompts = [
+
+"Ultra realistic YouTube thumbnail, shocked Indian grandfather holding a glowing golden apple, magical energy, luxury golden SUV appearing, cinematic lighting, vibrant colors, 8K.",
+
+"Ultra realistic businessman holding bundles of cash, futuristic AI city background, dramatic lighting, viral YouTube thumbnail, high contrast, 8K.",
+
+"Poor boy transforming into IAS officer, emotional cinematic scene, luxury office, realistic, ultra detailed, YouTube thumbnail."
+
+];
+
+if(thumbnailBtn){
+
+thumbnailBtn.addEventListener("click",function(){
+
+const random =
+thumbnailPrompts[Math.floor(Math.random()*thumbnailPrompts.length)];
+
+thumbnailOutput.value = random;
+
+});
+
+}
